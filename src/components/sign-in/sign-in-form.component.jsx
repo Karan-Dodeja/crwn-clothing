@@ -7,7 +7,7 @@ import {
   signInWithGooglePopup,
 } from "../../utils/firebase/firebase.utils";
 
-import { UserContext } from "../../context/user.context"; }
+import { UserContext } from "../../context/user.context";
 
 import "./sign-up-form.style.scss";
 
