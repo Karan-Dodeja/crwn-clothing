@@ -1,4 +1,6 @@
-const categoryItem = ({ category }) => {
+import "./directory-item.styles.scss";
+
+const DirectoryItem = ({ category }) => {
   const { imageUrl, title } = category;
   return (
     <div>
@@ -18,4 +20,4 @@ const categoryItem = ({ category }) => {
   );
 };
 
-export default categoryItem;
+export default DirectoryItem;
