@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "../button/button.component";
+import { Button, BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
   signInAuthUserWithEmailAndPassword,
@@ -81,7 +81,7 @@ export const SignInForm = () => {
           </Button>
           <Button
             type="button"
-            buttonType="google"
+            buttonType={BUTTON_TYPE_CLASSES.google}
             onClick={loginWithGoogleUser}
           >
             Google sign in
