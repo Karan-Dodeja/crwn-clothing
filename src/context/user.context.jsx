@@ -5,7 +5,7 @@ import {
   onAuthStateChangedListener,
   createUserDocumentFromAuth,
   signOut,
-} from "firebase/auth";
+} from "../utils/firebase/firebase.utils";
 
 export const UserContext = createContext({
   currentUser: null,
@@ -35,7 +35,6 @@ const INITIAL_STATE = {
 };
 
 export const UserProvider = ({ children }) => {
-  //  const [currentUser, setCurrentUser] = useState(null);
   const [{ currentUser }, dispatch] = useReducer(userReducer, INITIAL_STATE);
 
   const setCurrentUser = (user) => {
